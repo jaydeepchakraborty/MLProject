@@ -13,12 +13,18 @@ dev:
     test_fl_nm: test/test.csv
     test_preprocess_fl_nm: test/test_preprocess.csv
     test_dataloader: test/test_dataloader.pt
-  vocab: data/vocab/vocab_obj.pth
+    batch_size: 8
+  vocab: 
+      vocab_path: data/vocab/vocab_obj.pth
+      vocab_wt_path: data/vocab/vocab_wt_obj.pth
+      embed_vector_nm: crawl-300d-2M.vec
+      embed_vector_url: https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip
+      embed_size: 300
+      vocab_size: 3000
   lbl_enc: data/encoder/label_encoder.pkl
   model:
       model_path: model/whats_cooking_model.pt
       info:
-          vocab_size: 2984
           no_of_cls: 20
           train_epoch: 6
           valid_epoch: 2

@@ -6,6 +6,10 @@
 --> save the test data ( test/test.csv )
 
 2) DataPreprocess
+train data ( train/train_preprocess.csv )
+valid data ( valid/valid_preprocess.csv )
+test data ( test/test_preprocess.csv )
+
 
 3) DataEncode
 --> encoding the TARGET ( label encoding )
@@ -22,4 +26,4 @@
 --> training model with train, valid dataloader
 
 7) ModelTest
---> 
+--> testing model with test dataloader

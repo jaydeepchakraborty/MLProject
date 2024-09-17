@@ -20,7 +20,7 @@ class CookingBatchSampler(Sampler):
 
         random.shuffle(indices)
         
-        self.batch_size = 8
+        self.batch_size = conf['data']['batch_size']
         self.pooled_indices = []
         # create pool of indices with similar lengths 
         for i in range(0, len(indices), self.batch_size * 100):
